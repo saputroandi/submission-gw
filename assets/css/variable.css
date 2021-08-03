@@ -1,0 +1,9 @@
+:root {
+  --dark-blue: #155263;
+  --orange: #ff6f3c;
+  --light-orange: #ff9a3c;
+  --yellow: #ffc93c;
+
+  --box-shadow-big: 6px 6px rgba(0, 0, 0, 0.6);
+  --box-shadow-small: 3px 3px rgba(0, 0, 0, 0.4);
+}

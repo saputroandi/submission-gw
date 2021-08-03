@@ -1,0 +1,96 @@
+header {
+  position: sticky;
+  top: 0;
+}
+
+.menu {
+  background-color: var(--orange);
+  box-shadow: var(--box-shadow-small);
+}
+
+.menu-content {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.menu h1 {
+  flex-grow: 2.5;
+  font-size: 1.5em;
+}
+
+.menu nav {
+  flex-grow: 1;
+}
+
+.menu-dekstop {
+  display: flex;
+  justify-content: flex-end;
+  gap: 60px;
+}
+
+.menu-dekstop a {
+  display: none;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.menu-toggle > span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 4px;
+  background: black;
+}
+
+.menu-hamburger {
+  display: flex;
+  position: relative;
+  top: 0;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu-hamburger > div {
+  display: block;
+  width: 100%;
+  margin: 22px 0;
+  position: absolute;
+  background-color: white;
+  z-index: 9;
+}
+
+.menu-list {
+  display: block;
+  width: 100%;
+  margin: 20px 0px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.menu-item {
+  padding: 8px 0;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-dekstop a {
+    display: block;
+  }
+  .menu-toggle {
+    display: none;
+  }
+}

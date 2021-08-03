@@ -1,0 +1,114 @@
+.heroes {
+  height: 100vh;
+  background-image: url('../img/cover-dota2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heroes-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0px;
+  height: 96%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.heroes-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+  gap: 10px;
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow-big);
+  transition-duration: 300ms;
+}
+
+.hero:hover {
+  box-shadow: none;
+}
+
+.hero > h1 {
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.hero.slark {
+  background-image: url('../img/slark.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero.skywrath {
+  background-image: url('../img/skywrath.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero.doom {
+  background-image: url('../img/doom.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero.naix {
+  background-image: url('../img/naix.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero.bane {
+  background-image: url('../img/bane.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero.phantom {
+  background-image: url('../img/PL.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero.warlock {
+  background-image: url('../img/warlock.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero.outworld {
+  background-image: url('../img/OD.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .heroes-row {
+    flex-direction: row;
+    height: 45%;
+    gap: 26px;
+  }
+
+  .hero {
+    width: 25%;
+    height: 100%;
+  }
+
+  .hero:hover {
+    box-shadow: none;
+    width: 30%;
+    height: 105%;
+  }
+}

@@ -1,0 +1,41 @@
+.news {
+  height: 100vh;
+  background-image: url('../img/dota-logo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0px;
+  height: 96%;
+  justify-content: center;
+  gap: 32px;
+}
+
+.news-content {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px;
+  border-radius: 8px;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  background-color: var(--light-orange);
+  box-shadow: var(--box-shadow-big);
+  cursor: pointer;
+}
+
+.news-content:hover {
+  box-shadow: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .news-container {
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+  }
+}
